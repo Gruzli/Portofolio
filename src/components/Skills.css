@@ -1,3 +1,4 @@
+/* Skills Section */
 .skills-section {
   text-align: center;
   padding: 50px 20px;
@@ -18,7 +19,7 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Auto-adjust columns based on available space */
   gap: 20px;
   justify-items: center;
 }
@@ -29,10 +30,12 @@
   align-items: center;
   text-align: center;
   background: white;
-  padding: 15px;
+  padding: 20px; /* Adjust padding for better content space */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 200px; /* Set a fixed height for uniformity */
+  justify-content: center; /* Center content inside the card */
 }
 
 .skill-card:hover {
@@ -46,11 +49,64 @@
 }
 
 .skill-card span {
-  font-size: 1em;
+  font-size: 1.1em; /* Slightly larger font size for skill names */
   font-weight: bold;
   color: #333;
 }
 
-body {
-  scroll-behavior: smooth; /* Enable smooth scrolling globally */
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 30px 15px; /* Adjust padding for mobile */
+  }
+
+  .skills-section h2 {
+    font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .skills-section p {
+    font-size: 1rem; /* Adjust paragraph text size for mobile */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust number of columns */
+    gap: 15px; /* Reduced gap for mobile */
+  }
+
+  .skill-card {
+    height: 180px; /* Slightly smaller height for mobile */
+    padding: 15px; /* Adjust padding to fit content */
+  }
+
+  .skill-icon {
+    font-size: 2.5em; /* Adjust icon size for mobile */
+  }
+
+  .skill-card span {
+    font-size: 1em; /* Adjust text size for skill names */
+  }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .skills-section {
+    padding: 40px 20px; /* Standard padding for tablets */
+  }
+
+  .skills-section h2 {
+    font-size: 2.2rem; /* Adjust heading size for tablets */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Adjust number of columns */
+    gap: 20px; /* Space between cards */
+  }
+
+  .skill-card {
+    height: 200px; /* Maintain card height on tablets */
+  }
+
+  .skill-icon {
+    font-size: 2.8em; /* Adjust icon size for tablets */
+  }
 }

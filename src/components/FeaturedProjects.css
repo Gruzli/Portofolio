@@ -1,7 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
-
+/* Featured Projects Section */
 .featured-projects {
   padding: 2rem;
   background-color: #f5f5f5;
@@ -76,4 +73,55 @@ html {
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
+  overflow: hidden; /* Prevent text from overflowing */
+  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+  white-space: normal; /* Allow text to wrap */
+  max-height: 120px; /* Set a max-height to prevent overflow */
+  margin-bottom: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .featured-projects {
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* Adjust title font size */
+    margin-bottom: 1rem; /* Reduce bottom margin */
+  }
+
+  .projects-scroll-panel {
+    gap: 1.5rem; /* Reduce the gap between projects */
+  }
+
+  .project-card {
+    flex-direction: column; /* Stack the project cards vertically on mobile */
+    gap: 1rem; /* Reduce the gap between image and text */
+    padding: 1rem;
+  }
+
+  .project-image {
+    width: 100%; /* Make sure image takes full width */
+  }
+
+  .project-info {
+    flex: 1;
+    text-align: center; /* Center-align text for better mobile view */
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem; /* Smaller font size for project title */
+  }
+
+  .project-info p {
+    font-size: 0.9rem; /* Smaller font size for project description */
+    max-height: none; /* Remove max-height constraint on mobile */
+    overflow: visible; /* Allow full description text to be visible */
+  }
+
+  .project-links a {
+    font-size: 0.8rem; /* Smaller font size for links */
+    margin: 0.3rem; /* Reduce margin between links */
+  }
 }

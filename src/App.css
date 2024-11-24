@@ -1,15 +1,57 @@
-/* General Styles */
-body {
+/* General Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Pastikan padding dan border dihitung dalam ukuran elemen */
+}
+
+/* Body Styles */
+body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
   background-color: #f8f9fa;
   color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Hindari scroll horizontal */
 }
 
 /* Container */
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;  /* Tidak melebihi lebar layar */
+  padding: 0 20px;  /* Padding kiri dan kanan */
+  margin: 0 auto;   /* Agar konten tetap berada di tengah */
+  box-sizing: border-box; /* Termasuk padding dalam lebar */
+}
+
+/* Layout Sections */
+section {
+  margin: 0 auto; /* Pastikan margin otomatis kiri-kanan agar di tengah */
   padding: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Sesuaikan ukuran font untuk perangkat kecil */
+  }
+
+  .container {
+    width: 100%;   /* Buat container lebih fleksibel */
+    padding: 0 15px; /* Padding kiri dan kanan lebih kecil */
+  }
+
+  section {
+    padding: 10px; /* Adjust padding pada section */
+  }
+
+  /* Mengatasi margin/padding yang tidak simetris di elemen */
+  .some-element-class {
+    margin-left: auto;
+    margin-right: auto; /* Pastikan margin kiri-kanan simetris */
+  }
+}
+
+/* Additional rule to prevent content overflow */
+html, body {
+  overflow-x: hidden; /* Hindari scroll horizontal yang tidak perlu */
 }
