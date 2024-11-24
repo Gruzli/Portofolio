@@ -3,8 +3,9 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Skills from './components/Skills';
-import './App.css';
+import FeaturedProjects from './components/FeaturedProjects';
 import Contact from './components/Contact';
+import './App.css';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <About />
       <Skills />
-      {/* <Project /> */}
+      <FeaturedProjects />
       <Contact />
     </div>
   );
