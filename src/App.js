@@ -1,6 +1,7 @@
 // src/App.js
 import React from 'react';
 import Navbar from './components/Navbar';
+import Intro from "./components/Intro";
 import About from './components/About';
 import Skills from './components/Skills';
 import FeaturedProjects from './components/FeaturedProjects';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <Intro />
       <About />
       <Skills />
       <FeaturedProjects />
