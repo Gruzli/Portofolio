@@ -1,0 +1,36 @@
+.skills-section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .skill-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #4caf50; /* Warna ikon */
+  }
+  
