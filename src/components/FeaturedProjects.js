@@ -48,7 +48,7 @@ const projects = [
 
 const FeaturedProjects = () => {
   return (
-    <section className="featured-projects">
+    <section id="projects" className="featured-projects">
       <h2 className="section-title">Featured Projects</h2>
       <div className="projects-scroll-panel">
         {projects.map((project, index) => (
@@ -58,11 +58,12 @@ const FeaturedProjects = () => {
               index % 2 === 0 ? "image-left" : "image-right"
             }`}
           >
-            {/* Project Image and Tech Stack */}
             <div className="project-image">
               <img src={project.image} alt={project.title} />
               <div className="project-tech-links">
-                <p><strong>Tech Stack:</strong> {project.techStack}</p>
+                <p>
+                  <strong>Tech Stack:</strong> {project.techStack}
+                </p>
                 <div className="project-links">
                   {Object.keys(project.links).map((key) => (
                     <a
@@ -71,14 +72,12 @@ const FeaturedProjects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {key.charAt(0).toUpperCase() + key.slice(1)} {/* Capitalize link labels */}
+                      {key.charAt(0).toUpperCase() + key.slice(1)}
                     </a>
                   ))}
                 </div>
               </div>
             </div>
-
-            {/* Project Info */}
             <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.description.trim()}</p>

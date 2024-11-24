@@ -1,11 +1,11 @@
 import React from "react";
-import { SiWhatsapp, SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
-import { MdEmail } from "react-icons/md";
+import { SiWhatsapp, SiInstagram, SiLinkedin, SiGithub } from "react-icons/si"; // Ensure proper import
+import { MdEmail } from "react-icons/md"; // Ensure proper import
 import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <h2>Contact</h2>
       <p>
         I'd love to hear from you! Whether you have a project idea, a

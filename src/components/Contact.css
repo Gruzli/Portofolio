@@ -1,53 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .contact-section {
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 40px 20px;
-  }
-  
-  .contact-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .contact-section p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    line-height: 1.6;
-  }
-  
-  .contact-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;
-    color: #333;
-  }
-  
-  .contact-icon {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #4caf50; /* Ubah warna sesuai preferensi */
-  }
-  
-  .contact-item a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .contact-item a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    margin-top: 40px;
-    font-size: 1em;
-    color: #666;
-  }
-  
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4caf50; /* Adjust color as needed */
+}
+
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 1em;
+  color: #666;
+}
