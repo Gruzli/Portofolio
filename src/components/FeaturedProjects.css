@@ -73,10 +73,10 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
-  overflow: hidden; /* Prevent text from overflowing */
-  text-overflow: ellipsis; /* Add ellipsis if text is too long */
+  overflow: visible; /* Allow full description text to be visible */
+  text-overflow: unset; /* Remove ellipsis */
   white-space: normal; /* Allow text to wrap */
-  max-height: 120px; /* Set a max-height to prevent overflow */
+  max-height: none; /* Ensure no height limit */
   margin-bottom: 1rem;
 }
 

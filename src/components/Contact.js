@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="contact-item">
           <SiLinkedin className="contact-icon" />
           <a
-            href="https://www.linkedin.com/in/gregorius-cahyadi/"
+            href="https://www.linkedin.com/in/gregorius-cahyadi-416b49251/"
             target="_blank"
             rel="noopener noreferrer"
           >
