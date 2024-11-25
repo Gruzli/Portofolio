@@ -9,11 +9,11 @@ const Intro = () => {
         <div className="intro-text">
           <h1>Hi, I’m Gregorius Cahyadi</h1>
           <p>
-            I am a <strong>Bachelor of Computer Science</strong> graduate from{" "}
-            <strong>Bina Nusantara University</strong>, passionate about{" "}
-            <strong>Web Development</strong> and{" "}
-            <strong>Software Engineering</strong>. I have a deep passion for{" "}
-            <strong>coding</strong> and solving complex problems. I love exploring
+            I am a Bachelor of Computer Science graduate from{" "}
+            Bina Nusantara University, passionate about{" "}
+            Web Development and{" "}
+            Software Engineering. I have a deep passion for{" "}
+            coding and solving complex problems. I love exploring
             new technologies, staying adaptable in the fast-paced tech world, and
             collaborating effectively within teams to bring innovative ideas to
             life.

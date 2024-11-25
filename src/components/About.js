@@ -8,25 +8,27 @@ const About = () => {
     <section id="about" className="about">
       <h2>About Me</h2>
       <div className="about-content">
-        <img src={profilePic} alt="Gregorius Cahyadi" />
-        <p>
-        Hi! i’m Gregorius Cahyadi an undergraduate student at 
-        BINUS University with a passion for Web and Software Development, 
-        specializing in Front-End Web Development.
-
-        I have experience in creating responsive, user-friendly websites 
-        using technologies like HTML, CSS, JavaScript, and frameworks 
-        such as React.
-
-        When I'm not coding, I'm usually working on team projects, 
-        YouTube-ing new techs and tech updates, or looking for new tools 
-        to upgrade my output. I'm always open to new challenges, whether 
-        it's collaborating on a project or developing innovative 
-        solutions. Feel free to reach out for any web development-related 
-        discussions or collaborations!
-
-        Scroll down a little bit more for my GitHub and project
-        </p>
+        <img src={profilePic} alt="Gregorius Cahyadi" className="profile-pic" />
+        <div className="about-text">
+          <p>
+            Hi! I’m <strong>Gregorius Cahyadi</strong>, an undergraduate student at 
+            <strong> BINUS University</strong> with a passion for <strong>Web</strong> and 
+            <strong> Software Development</strong>, specializing in <strong>Front-End Web Development</strong>.
+          </p>
+          <p>
+            I have experience in creating <strong>responsive</strong>, user-friendly websites using technologies like 
+            <strong> HTML, CSS, JavaScript</strong>, and frameworks such as <strong>React</strong>. My work prioritizes
+            both functionality and user experience.
+          </p>
+          <p>
+            Outside of coding, I enjoy working on <strong>team projects</strong>, staying updated on the latest 
+            <strong>tech trends</strong>, and discovering new tools to improve my workflow. I’m open to 
+            <strong>collaborative projects</strong> and always eager to tackle new challenges.
+          </p>
+          <p>
+            <em>Scroll down to explore my projects, GitHub contributions, and more. Let’s build something great together!</em>
+          </p>
+        </div>
       </div>
     </section>
   );
