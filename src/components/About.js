@@ -1,6 +1,6 @@
-// src/components/About.js
 import React from 'react';
 import profilePic from '../assets/profile.jpeg';
+import CV from '../assets/GregoriusCahyadi_Cv.pdf';
 import './About.css';
 
 const About = () => {
@@ -28,6 +28,15 @@ const About = () => {
           <p>
             <em>Scroll down to explore my projects, GitHub contributions, and more. Let’s build something great together!</em>
           </p>
+            <a href={CV} download="GregoriusCahyadi_Cv.pdf" className="download-btn">
+              Download CV
+            </a>
+            {/* <a 
+              href="/assets/GregoriusCahyadi_Cv.pdf" 
+              download="GregoriusCahyadi_Cv.pdf" 
+              className="download-btn">
+              Download CV
+            </a> */}
         </div>
       </div>
     </section>
