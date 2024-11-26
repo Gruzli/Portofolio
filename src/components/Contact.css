@@ -32,7 +32,7 @@
 }
 
 .contact-icon {
-  font-size: 2em; /* Reduce the icon size */
+  font-size: 1.5em; /* Reduce the icon size */
   margin-bottom: 10px;
 }
 
@@ -53,97 +53,92 @@ footer {
 
 /* Icon Colors */
 .contact-item .contact-icon.whatsapp {
-  color: #25d366; /* WhatsApp Green */
+  color: #25d366;
 }
 
 .contact-item .contact-icon.instagram {
-  color: #e4405f; /* Instagram Red-Pink */
+  color: #e4405f;
 }
 
 .contact-item .contact-icon.linkedin {
-  color: #0077b5; /* LinkedIn Blue */
+  color: #0077b5;
 }
 
 .contact-item .contact-icon.github {
-  color: #333; /* GitHub Dark Gray */
+  color: #333;
 }
 
 .contact-item .contact-icon.email {
-  color: #d44638; /* Email Red */
+  color: #d44638;
 }
 
 /* Mobile and Tablet Responsiveness */
 @media (max-width: 768px) {
-  /* Adjust padding for mobile devices */
   .contact-section {
     padding: 30px 10px;
   }
 
-  /* Adjust heading size and margin */
   .contact-section h2 {
-    font-size: 2rem; /* Slightly smaller heading */
+    font-size: 2rem;
     margin-bottom: 15px;
   }
 
-  /* Adjust paragraph text size */
   .contact-section p {
     font-size: 1rem;
-    max-width: 90%; /* Make text more responsive */
-    margin: 0 auto; /* Center-align the paragraph */
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  /* Stack icons vertically and adjust spacing */
+  /* Make icons stay horizontal even on mobile */
   .contact-icons {
-    flex-direction: column; /* Stack icons vertically */
-    align-items: center; /* Center the icons */
-    gap: 20px; /* Reduced gap for mobile */
+    flex-direction: row;  /* Ensure icons stay in a row horizontally */
+    justify-content: center; /* Center icons */
+    gap: 20px;             /* Adjust gap for mobile */
   }
 
   .contact-item {
-    font-size: 1.1rem; /* Slightly smaller text */
-    margin-bottom: 15px; /* Space between each contact item */
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 
-  /* Adjust icon size for mobile */
   .contact-icon {
-    font-size: 2.5rem; /* Slightly larger icons for mobile */
-    margin-bottom: 10px; /* Adjust margin */
+    font-size: 2rem; /* Adjusted icon size for mobile */
+    margin-bottom: 10px;
   }
 
-  /* Reduce footer text size */
   footer {
-    font-size: 0.9em;
-    margin-top: 20px;
+    font-size: 0.8em; /* Reduced footer font size for mobile */
+    margin-top: 20px; /* Adjusted margin-top to make space */
   }
 }
 
-/* Tablet Responsiveness (for devices between 768px and 1024px) */
+/* Tablet Responsiveness */
 @media (max-width: 1024px) and (min-width: 769px) {
   .contact-section {
-    padding: 35px 15px; /* Adjust padding for tablets */
+    padding: 35px 15px;
   }
 
   .contact-section h2 {
-    font-size: 2.2rem; /* Adjust heading size for tablets */
+    font-size: 2.2rem;
     margin-bottom: 18px;
   }
 
   .contact-section p {
     font-size: 1.1rem;
-    max-width: 85%; /* Reduce text width for better readability */
+    max-width: 85%;
     margin: 0 auto;
   }
 
   .contact-icons {
-    gap: 25px; /* Slightly reduce gap for tablet */
+    gap: 25px;
   }
 
   .contact-item {
     font-size: 1.15rem;
-    margin-bottom: 18px; /* Increase space between items */
+    margin-bottom: 18px;
   }
 
   .contact-icon {
-    font-size: 2.8rem; /* Reduce icon size for tablets */
+    font-size: 2.5rem; /* Slightly smaller icon size for tablets */
   }
 }
