@@ -1,9 +1,22 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React, { useState, useEffect } from "react";
+import "../style/Navbar.css";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about");
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Update navbar style on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change style if scrolled > 50px
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleScroll = (sectionId) => {
     setActiveSection(sectionId);
@@ -27,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <h1 onClick={scrollToTop} className="navbar-title">
         Gregorius C.
       </h1>
@@ -35,7 +48,7 @@ const Navbar = () => {
         className="mobile-menu-toggle"
         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
       >
-        ☰
+        {isMobileMenuOpen ? "✖" : "☰"}
       </button>
       <ul className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
         {[

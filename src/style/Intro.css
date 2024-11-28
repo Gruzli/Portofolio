@@ -1,0 +1,128 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 20px;  /* Spasi untuk responsif */
+  background: linear-gradient(to right, #e0f7fa, #f0f4f8); /* Gradien latar belakang */
+  padding-top: 6rem; /* Hindari overlap dengan navbar */
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+  border-radius: 20px; /* Sudut membulat */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  padding: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek animasi hover */
+}
+
+.intro-content:hover {
+  transform: translateY(-5px); /* Sedikit efek melayang */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+  flex: 1;
+  padding-right: 2rem;
+  text-align: left;
+}
+
+.intro-text h1 {
+  font-size: 2.8rem; /* Font lebih besar */
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif; /* Font modern */
+  animation: fadeIn 1s ease-in-out; /* Animasi masuk */
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 700px;
+  animation: fadeIn 1.5s ease-in-out; /* Animasi masuk */
+}
+
+.intro-text strong {
+  color: #007bff;
+}
+
+.intro-image {
+  flex: 1;
+  position: relative;
+}
+
+.fog-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.fog-effect img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Sudut gambar membulat */
+  filter: blur(2px) brightness(0.9); /* Blur dan kecerahan awal */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.fog-effect:hover img {
+  filter: blur(0) brightness(1); /* Hilangkan blur saat hover */
+  transform: scale(1.05); /* Sedikit zoom saat hover */
+}
+
+.fog-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column; /* Stack text dan gambar */
+    text-align: center;
+    padding: 1.5rem; /* Kurangi padding untuk mobile */
+  }
+
+  .intro-text {
+    padding-right: 0;
+    margin-bottom: 2rem; /* Spasi antara teks dan gambar */
+  }
+
+  .intro-text h1 {
+    font-size: 2rem; /* Font lebih kecil di mobile */
+  }
+
+  .intro-text p {
+    font-size: 1rem; /* Kurangi ukuran font di mobile */
+    max-width: 100%; /* Pastikan teks tidak meluap */
+  }
+
+  .fog-effect img {
+    width: 90%; /* Kurangi ukuran gambar di mobile */
+    margin: 0 auto;
+  }
+}

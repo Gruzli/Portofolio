@@ -1,7 +1,7 @@
 import React from "react";
 import { SiWhatsapp, SiInstagram, SiLinkedin, SiGithub } from "react-icons/si"; // Ensure proper import
 import { MdEmail } from "react-icons/md"; // Ensure proper import
-import "./Contact.css";
+import "../style/Contact.css";
 
 const Contact = () => {
   return (

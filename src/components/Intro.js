@@ -1,13 +1,24 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import profilePic from '../assets/profile.jpeg';
-import "./Intro.css";
+import "../style/Intro.css";
 
 const Intro = () => {
   return (
     <section className="intro">
       <div className="intro-content">
         <div className="intro-text">
-          <h1>Hi, I’m Gregorius Cahyadi</h1>
+          <h1>
+            <Typewriter
+              options={{
+                strings: ["Hi, I’m Gregorius Cahyadi"],
+                autoStart: true,
+                loop: true,
+                delay: 75,
+                deleteSpeed: 50,
+              }}
+            />
+          </h1>
           <p>
             I am a Bachelor of Computer Science graduate from{" "}
             Bina Nusantara University, passionate about{" "}

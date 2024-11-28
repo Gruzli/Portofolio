@@ -15,7 +15,7 @@ import {
   SiBootstrap,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa"; // Import alternative for Java
-import "./Skills.css";
+import "../style/Skills.css";
 
 const skills = [
   { name: "Typescript", icon: <SiTypescript />, color: "#007acc" },

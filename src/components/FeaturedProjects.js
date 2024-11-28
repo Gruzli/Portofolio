@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./FeaturedProjects.css";
+import "../style/FeaturedProjects.css";
 
 // Projects data
 const projects = [
